@@ -14,6 +14,7 @@
 		F4E2ABBB21F4167300A45E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E2ABBA21F4167300A45E0F /* Assets.xcassets */; };
 		F4E2ABBE21F4167300A45E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E2ABBC21F4167300A45E0F /* LaunchScreen.storyboard */; };
 		F4E2ABC621F41A5300A45E0F /* IputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2ABC521F41A5300A45E0F /* IputViewController.swift */; };
+		F4E2ABC821F43E9F00A45E0F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2ABC721F43E9F00A45E0F /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F4E2ABBD21F4167300A45E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E2ABBF21F4167300A45E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4E2ABC521F41A5300A45E0F /* IputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IputViewController.swift; sourceTree = "<group>"; };
+		F4E2ABC721F43E9F00A45E0F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				F4E2ABBC21F4167300A45E0F /* LaunchScreen.storyboard */,
 				F4E2ABBF21F4167300A45E0F /* Info.plist */,
 				F4E2ABC521F41A5300A45E0F /* IputViewController.swift */,
+				F4E2ABC721F43E9F00A45E0F /* Task.swift */,
 			);
 			path = taskapp;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E2ABC821F43E9F00A45E0F /* Task.swift in Sources */,
 				F4E2ABB621F4167200A45E0F /* ViewController.swift in Sources */,
 				F4E2ABB421F4167200A45E0F /* AppDelegate.swift in Sources */,
 				F4E2ABC621F41A5300A45E0F /* IputViewController.swift in Sources */,
