@@ -24,6 +24,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let inputViewController: IputViewController = segue.destination as! IputViewController
+        
+        if segue.identifier == "cellSegue" {
+            let indexPath = self.tableView.indexPathForSelectedRow
+            inputViewController.task = taskArray[indexPath!.row]
+            
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskArray.count
     }
