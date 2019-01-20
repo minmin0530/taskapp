@@ -31,6 +31,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let indexPath = self.tableView.indexPathForSelectedRow
             inputViewController.task = taskArray[indexPath!.row]
             
+        } else {
+            let task = Task()
+            task.date = Date()
+            
+            let allTasks = realm.objects(Task.self)
+            if allTasks.count != 0 {
+                task.id = allTasks.max(ofProperty: "id")! + 1
+            }
+            
+            inputViewController.task = task
         }
     }
     
